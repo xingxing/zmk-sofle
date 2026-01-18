@@ -31,11 +31,11 @@ layers:
   - A
   - R
   - S
-  - T
+  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - D
   - $$mdi:arrow-left-bold$$
   - H
-  - N
+  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
   - E
   - I
   - O
