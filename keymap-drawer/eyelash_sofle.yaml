@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '-', s: _}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -35,7 +35,7 @@ layers:
   - D
   - $$mdi:arrow-left-bold$$
   - H
-  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
+  - N
   - E
   - I
   - O
