@@ -96,11 +96,11 @@
 
         wade {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4        &kp N5    &kp UP_ARROW     &kp N6  &kp N7        &kp N8         &kp N9            &kp N0             &kp MINUS
-&kp TAB     &kp Q      &kp W         &kp F         &kp P         &kp G     &kp DOWN_ARROW   &kp J   &kp L         &kp U          &kp Y             &kp SEMICOLON      &kp BSLH
-&kp LCTRL   &kp A      &kp R         &kp S         &hmL LCTRL T  &kp D     &kp LEFT_ARROW   &kp H   &hmR RCTRL N  &kp E          &kp I             &kp O              &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V         &kp B     &kp RIGHT_ARROW  &kp K   &kp M         &kp COMMA      &kp DOT           &kp FSLH           &kp RSHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE     &mo 1     &kp ENTER        &mo 2   &kp ENTER     &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4        &kp N5    &kp UP_ARROW     &kp N6  &kp N7     &kp N8         &kp N9            &kp N0             &kp BACKSPACE
+&kp TAB     &kp Q      &kp W         &kp F         &kp P         &kp G     &kp DOWN_ARROW   &kp J   &kp L      &kp U          &kp Y             &kp SEMICOLON      &kp BSLH
+&kp LCTRL   &kp A      &kp R         &kp S         &hmL LCTRL T  &kp D     &kp LEFT_ARROW   &kp H   &kp N      &kp E          &kp I             &kp O              &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V         &kp B     &kp RIGHT_ARROW  &kp K   &kp M      &kp COMMA      &kp DOT           &kp FSLH           &kp RSHIFT
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE     &mo 1     &kp ENTER        &mo 2   &kp ENTER  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
