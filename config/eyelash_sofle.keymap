@@ -37,6 +37,30 @@
         tap-ms = <100>;
     };
 
+    hmR: hmR {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HMR";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "tap-preferred";
+        hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57 52>;
+        hold-trigger-on-release;
+    };
+
+    hmL: hmL {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HML";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "tap-preferred";
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <50 51 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 59 60 61 62 63>;
+    };
+
     behaviors {
     };
 
@@ -72,11 +96,11 @@
 
         wade {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6  &kp N7     &kp N8         &kp N9            &kp N0             &kp MINUS
-&kp TAB     &kp Q      &kp W         &kp F         &kp P      &kp G     &kp DOWN_ARROW   &kp J   &kp L      &kp U          &kp Y             &kp SEMICOLON      &kp BSLH
-&kp LCTRL   &kp A      &kp R         &kp S         &kp T      &kp D     &kp LEFT_ARROW   &kp H   &kp N      &kp E          &kp I             &kp O              &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp K   &kp M      &kp COMMA      &kp DOT           &kp FSLH           &kp RSHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 1     &kp ENTER        &mo 2   &kp ENTER  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4        &kp N5    &kp UP_ARROW     &kp N6  &kp N7        &kp N8         &kp N9            &kp N0             &kp MINUS
+&kp TAB     &kp Q      &kp W         &kp F         &kp P         &kp G     &kp DOWN_ARROW   &kp J   &kp L         &kp U          &kp Y             &kp SEMICOLON      &kp BSLH
+&kp LCTRL   &kp A      &kp R         &kp S         &hmL LCTRL T  &kp D     &kp LEFT_ARROW   &kp H   &hmR RCTRL N  &kp E          &kp I             &kp O              &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V         &kp B     &kp RIGHT_ARROW  &kp K   &kp M         &kp COMMA      &kp DOT           &kp FSLH           &kp RSHIFT
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE     &mo 1     &kp ENTER        &mo 2   &kp ENTER     &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
